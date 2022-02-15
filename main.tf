@@ -26,7 +26,7 @@ resource "aws_instance" "ubuntu1" {
     Name                 = var.instance_name
     "Linux Distribution" = "Ubuntu"
   }
-  
+}
 
 resource "aws_instance" "ubuntu2" {
   ami           = data.aws_ami.ubuntu.id
